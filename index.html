@@ -6,19 +6,49 @@
     <title>Nue Studio | Professional Nail Salon</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Alkatra:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="topbar-left">
+            <span class="topbar-item">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" ry="2"></rect><polyline points="3 7 12 13 21 7"></polyline></svg>
+                info@angelthespalon.com
+            </span>
+            <span class="topbar-item">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                (+91)94263 15923
+            </span>
+        </div>
+        <div class="topbar-right">
+            <a href="#" class="social-icon">
+                <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-icon">
+                <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+        </div>
+    </div>
     <nav class="navbar">
         <div class="logo">
             <span class="logo-text">Nue Studio</span>
         </div>
         <ul class="nav-links">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">SERVICES</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li class="dropdown">
+                <a href="#">OUR SERVICE <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a>
+                <ul class="dropdown-menu">
+                    <li><a href="facial-salon.html">Facial Salon</a></li>
+                    <li><a href="#">Hair Services</a></li>
+                    <li><a href="#">Nail Salon</a></li>
+                </ul>
+            </li>
             <li><a href="#">BLOG</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
         </ul>
         <div class="nav-cta">
             <a href="#" class="btn btn-dark">VIEW WORK</a>
@@ -27,7 +57,7 @@
 
     <main class="hero">
         <div class="hero-container">
-            <div class="hero-left">
+            <div class="hero-left" data-aos="fade-right">
                 <h1 class="hero-title">
                     Manicure And <br>
                     Pedicure <br>
@@ -39,7 +69,7 @@
                 </div>
             </div>
 
-            <div class="hero-right">
+            <div class="hero-right" data-aos="fade-left">
                 <div class="arch-container">
                     <!-- Sparkles -->
                     <div class="sparkle sparkle-1">
@@ -72,5 +102,302 @@
             </div>
         </div>
     </main>
+
+    <section class="services-banner">
+        <div class="services-container">
+            <div class="service-item" data-aos="zoom-in">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#221f1f" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="6" cy="18" r="3"></circle>
+                        <circle cx="6" cy="6" r="3"></circle>
+                        <path d="M8.12 15.88L20 4"></path>
+                        <path d="M8.12 8.12L12 12"></path>
+                        <path d="M14.48 14.48L20 20"></path>
+                        <path d="M18 4l2 2-8 8-2-2 8-8z"></path>
+                        <line x1="17" y1="5" x2="15" y2="7"></line>
+                        <line x1="18.5" y1="6.5" x2="16.5" y2="8.5"></line>
+                        <line x1="20" y1="8" x2="18" y2="10"></line>
+                    </svg>
+                </div>
+                <div class="service-info">
+                    <h3>Hair Services</h3>
+                    <p>Hair cut, Hair styling and<br>Hair kinds of Treatments</p>
+                </div>
+            </div>
+
+            <div class="service-item" data-aos="zoom-in">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#221f1f" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 15l-4.5 4.5a4 4 0 0 1-5.6-5.6L9.5 9.5" />
+                        <path d="M6 10.5a2.8 2.8 0 0 0 4 4l1.5-1.5-4-4L6 10.5z" />
+                        <path d="M19 5l-4 4" />
+                        <rect x="18" y="2" width="2" height="5" transform="rotate(45 19 4)" />
+                        <path d="M14 10l-1 1" />
+                    </svg>
+                </div>
+                <div class="service-info">
+                    <h3>Nail Services</h3>
+                    <p>Nail Extension, Custom<br>Nail Design, Nail polish<br>Removing</p>
+                </div>
+            </div>
+
+            <div class="service-item" data-aos="zoom-in">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#221f1f" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 21a9 9 0 0 1-9-9V8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a9 9 0 0 1-9 9z"/>
+                        <path d="M6 7c3-2 9-2 12 0"/>
+                        <path d="M9 4a3 3 0 0 1 6 0"/>
+                        <path d="M7 12c1 1 2 1 3 0"/>
+                        <path d="M14 12c1 1 2 1 3 0"/>
+                        <path d="M12 12v3"/>
+                        <path d="M18 16l3-3"/>
+                        <path d="M17 17l1-1"/>
+                        <circle cx="18.5" cy="15.5" r="1.5" />
+                    </svg>
+                </div>
+                <div class="service-info">
+                    <h3>Skin Services</h3>
+                    <p>Facial, Bridal Makeup,<br>Eyebrow Lamination &<br>many more....</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+<section class="about-section common-padding">
+    <div class="container about-container auto-grid">
+        <div class="about-image" data-aos="fade-right">
+            <img src="assets/salon_interior_main.png" alt="Angel Salon Interior">
+        </div>
+        <div class="about-content section-content" data-aos="fade-left">
+            <h2 class="section-title">Unmatched Beauty Parlour Services</h2>
+            <p>Welcome to Angel Salon, A best beauty salon in Ahmedabad, Gujarat. With over 25 years of experience, we offer wide range of beauty parlour services for your hair, skin, nails and also bridal makeup for your special day. Our group is devoted to improving your herbal beauty, offering tailored answers that mirror your individuality and leave a long-lasting effect.</p>
+            <a href="#" class="btn btn-outline">READ MORE</a>
+        </div>
+    </div>
+</section>
+
+<!-- BRIDAL SECTION -->
+<section class="bridal-section common-padding">
+    <div class="bridal-overlay"></div>
+    <div class="container bridal-container text-center section-content">
+        <h2 class="section-title text-light">Our Beauty Parlour Bridal Package</h2>
+        <p class="text-light max-w-text mx-auto">At Angel, we understand the importance of your wedding day. That is why we offer premium bridal makeup services in Ahmedabad. Our wedding makeup packages are designed to enhance your appearance and feel your quality.</p>
+        <div class="bridal-dl mt-4">
+            <span class="text-light">For more details please download</span>
+            <br>
+            <a href="#" class="inline-link text-light-link mt-2 inline-block">our catalog</a>
+        </div>
+    </div>
+</section>
+
+<!-- COMPREHENSIVE SERVICE -->
+<section class="comprehensive-section common-padding" data-aos="fade-up">
+    <div class="container text-center section-content">
+        <h2 class="section-title">Comprehensive Service with Best Beauty Salon</h2>
+        <p class="max-w-text mx-auto">We offer a complete range of beauty salon services, from hair styling and nail extensions to rejuvenating facial services and expert skin consultations.</p>
+        <a href="#" class="btn btn-solid mt-4">READ MORE</a>
+    </div>
+</section>
+
+<!-- WHAT WE OFFER GRID -->
+<section class="offer-section common-padding bg-alt">
+    <div class="container offer-container">
+        <div class="section-content text-center mb-5">
+            <h2 class="section-title">Our Beauty Parlour Can Offer You</h2>
+        </div>
+        <div class="grid grid-3">
+            <div class="offer-card" data-aos="flip-left">
+                <h3>Facial</h3>
+                <p>Indulge in rejuvenating facials for radiant, glowing skin.</p>
+            </div>
+            <div class="offer-card" data-aos="flip-left">
+                <h3>Spa</h3>
+                <p>Unwind and recharge with our luxurious spa treatments.</p>
+            </div>
+            <div class="offer-card" data-aos="flip-left">
+                <h3>Nail Extension</h3>
+                <p>Enhance your natural beauty with flawless nail extensions.</p>
+            </div>
+            <div class="offer-card" data-aos="flip-left">
+                <h3>Hair Consultation</h3>
+                <p>Personalized hair care advice and styling solutions.</p>
+            </div>
+            <div class="offer-card" data-aos="flip-left">
+                <h3>Skin Consultation</h3>
+                <p>Expert skin analysis and personalized treatment recommendations.</p>
+            </div>
+            <div class="offer-card" data-aos="flip-left">
+                <h3>Hair Treatment</h3>
+                <p>Restore and revitalize your hair with our expert treatments.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CHOOSE US & SPA IMG -->
+<section class="choose-section common-padding">
+    <div class="container auto-grid">
+        <div class="choose-content section-content" data-aos="fade-right">
+            <h2 class="section-title">Choose Our Beauty Salon</h2>
+            <div class="feature-item">
+                <h4>Expertise You Can Trust</h4>
+                <p>With 25 years of experience and best makeup artist, we offer the highest quality beauty parlour services.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Personalized Beauty Solutions</h4>
+                <p>We agree with celebrating your individuality. Our customized salon services are designed to suit your unique needs.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Commitment to Quality</h4>
+                <p>We use only the most superb merchandise in all our beauty salon services. Quality commitment ensures you get first-rate care.</p>
+            </div>
+        </div>
+        <div class="choose-image" data-aos="fade-left">
+            <img src="assets/spa_relaxation.png" alt="Luxury Spa Treatments">
+        </div>
+    </div>
+</section>
+
+<!-- PRICING PACKAGES -->
+<section class="pricing-section common-padding bg-alt">
+    <div class="container section-content">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Beauty Parlour Package Overview</h2>
+        </div>
+        <div class="grid grid-3 pricing-grid">
+            <div class="pricing-card" data-aos="fade-up">
+                <h3>Basic</h3>
+                <ul>
+                    <li>HD Makeup</li>
+                    <li>(Pse, LA Girl)</li>
+                    <li>Simple eyes</li>
+                    <li>Open Hair Ironing or Simple Curl, Waterfall, Twist, French Braid</li>
+                </ul>
+            </div>
+            <div class="pricing-card popular" data-aos="fade-up" data-aos-delay="200">
+                <h3>Standard</h3>
+                <ul>
+                    <li>HD Makeup (Two Face, Mac, Nars)</li>
+                    <li>Eyes variation, Open Hair curls variation with extension</li>
+                    <li>Trending Front Braids or Messy Hairstyle</li>
+                    <li>Hair Accessories and Draping</li>
+                </ul>
+            </div>
+            <div class="pricing-card" data-aos="fade-up">
+                <h3>Premium</h3>
+                <ul>
+                    <li>HD Makeup (Nars, Dior, Tarte)</li>
+                    <li>Eyes variation, Open Hair curls variation</li>
+                    <li>Trending Braids or Front/Back Messy Hairstyle</li>
+                    <li>Hair Accessories and Draping</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-5 pt-4">
+            <p class="max-w-text mx-auto">Are you looking for best beauty parlour in Ahmedabad for your bridal makeup? Our bridal packages are designed to offer the whole thing you want.</p>
+            <a href="#" class="btn btn-solid mt-4">CONTACT US</a>
+        </div>
+    </div>
+</section>
+
+<!-- UNWIND BANNER -->
+<section class="unwind-section common-padding text-center" data-aos="zoom-in">
+    <div class="container section-content">
+        <h2 class="section-title">Unwind Best Beauty Parlour Services</h2>
+        <p class="max-w-text mx-auto">At Angel Salon, we provide more significance than just beauty – we enjoy relaxation and renewal. Our beauty salon services help you unwind, while our personalized beauty parlour artist and treatments deal with your body and skin issues.</p>
+    </div>
+</section>
+
+<!-- GALLERY / TESTIMONIAL -->
+<section class="gallery-section common-padding bg-alt">
+    <div class="container auto-grid items-center">
+        <div class="gallery-image" data-aos="fade-right">
+            <img src="assets/gallery_portrait.png" alt="Client Testimonial">
+        </div>
+        <div class="testimonial-content section-content" data-aos="fade-left">
+            <h2 class="section-title">Our Graceful Gallery</h2>
+            <div class="testimonial-slider mt-4 wrapper-bg">
+                <p class="quote">"I was absolutely blown away by Komal Mam's makeup and hairstyling skills! My wedding look was beyond perfect. Everyone complimented me on how flawless my makeup was."</p>
+                <div class="quote-author mt-2">- Happy Bride</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOGS -->
+<section class="blog-section common-padding">
+    <div class="container section-content">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Blogs</h2>
+            <p><a href="#" class="inline-link" style="color: var(--accent-color); font-weight: 600;">Beauty Salon</a></p>
+        </div>
+        <div class="grid grid-3">
+            <div class="blog-card" data-aos="fade-up">
+                <h4><a href="#">Top Skills You'll Learn in a Beauty Parlour Course</a></h4>
+                <p class="meta">August 18, 2025 | By devangelthespalon</p>
+                <a href="#" class="read-more">Continue reading &rarr;</a>
+            </div>
+            <div class="blog-card" data-aos="fade-up">
+                <h4><a href="#">Top Beauty Salon Services Every Woman Should Try</a></h4>
+                <p class="meta">August 18, 2025 | By devangelthespalon</p>
+                <a href="#" class="read-more">Continue reading &rarr;</a>
+            </div>
+            <div class="blog-card" data-aos="fade-up">
+                <h4><a href="#">How to Choose the Right Bridal Makeup Artist</a></h4>
+                <p class="meta">August 18, 2025 | By devangelthespalon</p>
+                <a href="#" class="read-more">Continue reading &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container grid grid-4">
+        <div class="footer-widget" data-aos="fade-up">
+            <h4 class="footer-title">About Us</h4>
+            <p>With over 25 years of experience, we are dedicated to enhancing your natural beauty through expert makeup and hairstyling. Our passion for creating stunning looks ensures that you feel confident.</p>
+            <a href="about.html" style="color: var(--accent-color); text-decoration: none; font-weight: 500; display: inline-block; margin-top: 10px;">read more &raquo;</a>
+        </div>
+        <div class="footer-widget" data-aos="fade-up">
+            <h4 class="footer-title">Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Academy</a></li>
+            </ul>
+        </div>
+        <div class="footer-widget" data-aos="fade-up">
+            <h4 class="footer-title">Our Services</h4>
+            <ul class="footer-links">
+                <li><a href="#">Hair Services</a></li>
+                <li><a href="#">Skin Services</a></li>
+                <li><a href="#">Nail Services</a></li>
+            </ul>
+        </div>
+        <div class="footer-widget" data-aos="fade-up">
+            <h4 class="footer-title">Reach out to us</h4>
+            <p>Shop no.305 ETC, Vandemataram Rd, Gota, Ahmedabad, Gujarat 382481</p>
+            <p>info@anglethespalon.com</p>
+            <p>(+91)94263 15923</p>
+        </div>
+    </div>
+    <div class="footer-bottom mt-5">
+        <div class="container text-center">
+            <p>&copy; Copyright 2024 anglethespalon. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100,
+    });
+</script>
 </body>
 </html>
